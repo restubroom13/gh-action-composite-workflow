@@ -21,8 +21,7 @@ runs:
       with:
         node-version: ${{ inputs.nodejsVersion }}
         
-  steps:
     - name: Install golang sdk
       uses: actions/setup-golang@v5
       with:
-      golang-version: ${{ inputs.goVersion }}
+        golang-version: ${{ inputs.goVersion }}
