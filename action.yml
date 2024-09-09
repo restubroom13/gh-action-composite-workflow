@@ -14,3 +14,6 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.nodejsVersion.type }}
+        
+    - name: Check nodejs version
+      run: echo ${{ inputs.nodejsVersion.type }}
