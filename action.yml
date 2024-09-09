@@ -24,4 +24,4 @@ runs:
     - name: Install golang sdk
       uses: actions/setup-go@v5
       with:
-        golang-version: ${{ inputs.goVersion }}
+        go-version: ${{ inputs.goVersion }}
