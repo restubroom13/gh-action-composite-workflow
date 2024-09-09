@@ -20,9 +20,7 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.nodejsVersion }}
-
-runs:
-  using: composite
+        
   steps:
     - name: Install golang sdk
       uses: actions/setup-golang@v5
