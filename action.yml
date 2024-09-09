@@ -6,11 +6,25 @@ inputs:
     required: false
     type: string
     default: 16.x
+
+  goVersion:
+    description: Setup your specific golang version
+    required: false
+    type: string
+    default: 1.18.10
     
 runs:
   using: composite
   steps:
-    - name: Install nodejs runtime
+    - name: Install nodejs sdk
       uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.nodejsVersion }}
+
+runs:
+  using: composite
+  steps:
+    - name: Install golang sdk
+      uses: actions/setup-golang@v5
+      with:
+      golang-version: ${{ inputs.goVersion }}
