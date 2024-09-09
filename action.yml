@@ -5,7 +5,7 @@ inputs:
     description: Setup your specific nodejs version
     required: false
     type: string
-    default: 14.x
+    default: 16.x
     
 runs:
   using: composite
