@@ -5,3 +5,5 @@ runs:
   steps:
     - name: Install nodejs runtime
       uses: actions/setup-node@v4
+      with:
+        node-version: 16.x
