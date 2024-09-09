@@ -1,9 +1,16 @@
 name: Composite Workflow
-description: Composite workflow without inputs
+description: Composite workflow for custom uses
+inputs:
+  nodejsVersion:
+    description: Setup your specific nodejs version
+    required: false
+    type: string
+    default: 14.x
+    
 runs:
   using: composite
   steps:
     - name: Install nodejs runtime
       uses: actions/setup-node@v4
       with:
-        node-version: 16.x
+        node-version: ${{ inputs.type }}
