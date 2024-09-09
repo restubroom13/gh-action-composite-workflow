@@ -5,9 +5,3 @@ runs:
   steps:
     - name: Install nodejs runtime
       uses: actions/setup-node@v4
-
-    - name: Print nodejs version & npm version
-      shell: bash
-      run: |
-        echo node -v
-        echo npm -v
